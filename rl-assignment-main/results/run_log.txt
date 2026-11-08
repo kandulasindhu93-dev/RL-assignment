@@ -1,0 +1,21 @@
+[sequential seed=0] after stage 1 (Empty): Empty=1.00  LavaGap=0.00  DoorKey=0.00   (88s)
+[sequential seed=0] after stage 2 (LavaGap): Empty=0.00  LavaGap=1.00  DoorKey=0.00   (181s)
+[sequential seed=0] after stage 3 (DoorKey): Empty=0.00  LavaGap=0.00  DoorKey=0.49   (274s)
+[replay     seed=0] after stage 1 (Empty): Empty=1.00  LavaGap=0.00  DoorKey=0.00   (89s)
+[replay     seed=0] after stage 2 (LavaGap): Empty=1.00  LavaGap=1.00  DoorKey=0.00   (178s)
+[replay     seed=0] after stage 3 (DoorKey): Empty=1.00  LavaGap=0.42  DoorKey=0.00   (262s)
+skip (done): results/raw/sequential_seed0.pkl
+skip (done): results/raw/replay_seed0.pkl
+[sequential seed=1] after stage 1 (Empty): Empty=1.00  LavaGap=0.00  DoorKey=0.00   (105s)
+[sequential seed=1] after stage 2 (LavaGap): Empty=0.00  LavaGap=1.00  DoorKey=0.00   (210s)
+[sequential seed=1] after stage 3 (DoorKey): Empty=0.00  LavaGap=0.00  DoorKey=0.59   (318s)
+[replay     seed=1] after stage 1 (Empty): Empty=1.00  LavaGap=0.00  DoorKey=0.00   (100s)
+[replay     seed=1] after stage 2 (LavaGap): Empty=1.00  LavaGap=1.00  DoorKey=0.00   (208s)
+[replay     seed=1] after stage 3 (DoorKey): Empty=0.89  LavaGap=0.00  DoorKey=0.59   (306s)
+[sequential seed=2] after stage 1 (Empty): Empty=0.95  LavaGap=0.00  DoorKey=0.00   (107s)
+[sequential seed=2] after stage 2 (LavaGap): Empty=0.00  LavaGap=1.00  DoorKey=0.00   (212s)
+[sequential seed=2] after stage 3 (DoorKey): Empty=0.00  LavaGap=0.00  DoorKey=0.00   (319s)
+[replay     seed=2] after stage 1 (Empty): Empty=0.95  LavaGap=0.00  DoorKey=0.00   (110s)
+[replay     seed=2] after stage 2 (LavaGap): Empty=1.00  LavaGap=1.00  DoorKey=0.00   (214s)
+[replay     seed=2] after stage 3 (DoorKey): Empty=1.00  LavaGap=0.28  DoorKey=0.00   (318s)
+all runs finished in 21.1 min

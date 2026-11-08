@@ -1,0 +1,70 @@
+{
+ "sequential": {
+  "avg_final_performance": [
+   0.12,
+   0.105
+  ],
+  "avg_forgetting": [
+   0.992,
+   0.014
+  ],
+  "backward_transfer": [
+   -0.992,
+   0.014
+  ],
+  "final_Empty": [
+   0.0,
+   0.0
+  ],
+  "final_LavaGap": [
+   0.0,
+   0.0
+  ],
+  "final_DoorKey": [
+   0.36,
+   0.316
+  ],
+  "forgetting_Empty": [
+   0.983,
+   0.029
+  ],
+  "forgetting_LavaGap": [
+   1.0,
+   0.0
+  ]
+ },
+ "replay": {
+  "avg_final_performance": [
+   0.464,
+   0.034
+  ],
+  "avg_forgetting": [
+   0.402,
+   0.137
+  ],
+  "backward_transfer": [
+   -0.393,
+   0.142
+  ],
+  "final_Empty": [
+   0.963,
+   0.064
+  ],
+  "final_LavaGap": [
+   0.233,
+   0.214
+  ],
+  "final_DoorKey": [
+   0.197,
+   0.341
+  ],
+  "forgetting_Empty": [
+   0.037,
+   0.064
+  ],
+  "forgetting_LavaGap": [
+   0.767,
+   0.214
+  ]
+ }
+}

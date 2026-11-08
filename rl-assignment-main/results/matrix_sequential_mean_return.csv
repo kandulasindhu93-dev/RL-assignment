@@ -1,0 +1,4 @@
+,Empty,LavaGap,DoorKey
+after_Empty,0.9525,0.0,0.0
+after_LavaGap,0.0,0.9471,0.0
+after_DoorKey,0.0,0.0,0.3471
