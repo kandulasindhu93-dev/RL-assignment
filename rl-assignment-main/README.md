@@ -1,5 +1,14 @@
 # Lifelong Learning Without Forgetting (MiniGrid, Double DQN)
 
+## Team Members
+
+| S.No | Name | Roll Number |
+|---|---|---|
+| 1 | C. Sanya | 100523729011 |
+| 2 | K. Sindhu | 100523729029 |
+| 3 | Nissi | 100523729001 |
+| 4 | Ch. Vaishnavi | 100523729012 |
+
 A single Double-DQN agent learns three MiniGrid tasks **sequentially** (Empty-Random-5x5, LavaGapS5, DoorKey-5x5).
 Two methods are compared: **Sequential** (replay buffer cleared at each task switch) and **Sequential + Experience Replay**
 (one buffer per task kept; each batch is 50% old-task / 50% current-task transitions). After every stage all three tasks are evaluated.
@@ -8,6 +17,7 @@ Two methods are compared: **Sequential** (replay buffer cleared at each task swi
 ```bash
 pip install -r requirements.txt
 python main.py --seeds 0 1 2        # ~30 min on 1 CPU core; saves results/raw/*.pkl (restartable)
+python baseline.py                  # random-policy baseline -> results/baseline_random.csv
 python analysis.py                  # writes CSVs, Learning_Curves.png and results/figures/*
 ```
 
@@ -20,6 +30,7 @@ python analysis.py                  # writes CSVs, Learning_Curves.png and resul
 | replay.py | FIFO buffer and TaskReplay (sequential / replay modes) |
 | train.py | sequential training and evaluation after every stage |
 | evaluate.py | greedy evaluation with the native reward |
+| baseline.py | random-policy baseline (uniform random actions) |
 | main.py / analysis.py | run experiments / metrics, CSVs, figures |
 
 ## Results (from the executed runs; success rate, mean ± std over 3 seeds)
@@ -31,6 +42,8 @@ python analysis.py                  # writes CSVs, Learning_Curves.png and resul
 | Final success: Empty | 0.000 ± 0.000 | 0.963 ± 0.064 |
 | Final success: LavaGap | 0.000 ± 0.000 | 0.233 ± 0.214 |
 | Final success: DoorKey | 0.360 ± 0.316 | 0.197 ± 0.341 |
+
+**Random-policy baseline** (same evaluation protocol): average success 0.228 ± 0.011 (Empty 0.527, LavaGap 0.077, DoorKey 0.080). Replay ends above it; the no-replay agent ends below it.
 
 Output files: `results/Experiment_Results.csv` (end-of-stage evaluation of every task, every run), `metrics_per_run.csv`,
 `metrics_summary_*.csv`, `matrix_*.csv`, `training_episodes.csv`, `periodic_eval.csv`, `Learning_Curves.png`, `figures/`.
